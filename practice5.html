@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice five</title>
+    <style>
+        
+        .content-one{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .content-two{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        
+        @media screen and (max-width:576px) {
+
+            .content-one{
+                grid-template-columns: repeat(1, 1fr);
+           
+        }
+        .content-two{
+            grid-template-columns: repeat(1, 1fr);
+           /* flex-direction: column-reverse; */
+           flex-direction: row-reverse;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="content-one">
+                <div class="img-one">
+                    <img src="./images/flower.jpg" alt="">
+                </div>
+                <div>
+                    <p class="title-one">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptate officiis voluptates nihil incidunt laudantium in praesentium nisi quaerat nam.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="content-two">
+                
+                <div>
+                    <p class="title-two">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptate officiis voluptates nihil incidunt laudantium in praesentium nisi quaerat nam.</p>
+                    <button>Read More</button>
+                </div>
+                <div img-two>
+                    <img src="./images/tiger.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
